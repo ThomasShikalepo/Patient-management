@@ -1,15 +1,13 @@
 package com.patient_service.patient_service.dto;
 
-
 public class PatientResponseDTO {
     private String patientId;
-    private  String fullname;
+    private String fullname;
     private String email;
     private String address;
     private String phoneNumber;
     private String gender;
     private String dateOfBirth;
-
 
     public String getFullname() {
         return fullname;
@@ -19,11 +17,11 @@ public class PatientResponseDTO {
         this.fullname = fullname;
     }
 
-    public String getPatientId() {
+    public String getpatientId() {
         return patientId;
     }
 
-    public void setPatientId(String patientId) {
+    public void setpatientId(String patientId) {
         this.patientId = patientId;
     }
 

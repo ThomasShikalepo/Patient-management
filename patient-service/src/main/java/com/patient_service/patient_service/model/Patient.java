@@ -12,6 +12,7 @@ public class Patient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "patient_Id") // Explicitly map to the database column
     private UUID patientId;
 
     @NotNull
@@ -26,16 +27,18 @@ public class Patient {
     private String address;
 
     @NotNull
-    @Column(unique = true)
+    @Column(name = "phone_number", unique = true)
     private String phoneNumber;
 
     @NotNull
     private String gender;
 
     @NotNull
+    @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 
     @NotNull
+    @Column(name = "registered_date")
     private LocalDate registerDate;
 
     public UUID getPatientId() {
