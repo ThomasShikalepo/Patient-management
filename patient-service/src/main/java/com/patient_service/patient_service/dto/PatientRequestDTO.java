@@ -25,9 +25,6 @@ public class PatientRequestDTO {
     @NotBlank(message = "Date of birth is required")
     private String dateOfBirth;
 
-    @NotBlank(message = "Age is required")
-    private String age;
-
     @NotBlank(message = "Registered date is required")
     private String registeredDate;
 
@@ -77,14 +74,6 @@ public class PatientRequestDTO {
 
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
     }
 
     public String getRegisteredDate() {
